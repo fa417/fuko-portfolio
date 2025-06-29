@@ -56,7 +56,7 @@ scene.add(lightFront);
 
 const loader = new GLTFLoader();
 
-loader.load('../../models/sp/yoga-sp.glb', (gltf) => {
+loader.load('/js/three/models/yoga-sp.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(6, 6, 6);
     model.rotation.y = Math.PI / 1;

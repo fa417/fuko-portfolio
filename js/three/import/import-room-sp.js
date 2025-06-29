@@ -56,7 +56,7 @@ scene.add(lightFront);
 
 const loader = new GLTFLoader();
 
-loader.load('../../models/sp/room-sp.glb', (gltf) => {
+loader.load('/js/three/models/room-sp.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(8, 8, 8);
     model.rotation.y = Math.PI / 1;

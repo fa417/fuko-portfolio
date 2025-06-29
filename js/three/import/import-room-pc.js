@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/controls/OrbitControls.js';
 
 
-const canvasContainer = document.getElementById('rezent-sp');
+const canvasContainer = document.getElementById('room-pc');
 
 
 const scene = new THREE.Scene();
@@ -35,7 +35,7 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 scene.add(ambientLight);
 
 // ライト - 後 -
-const lightBack = new THREE.DirectionalLight(0xffffff, 0.3);
+const lightBack = new THREE.DirectionalLight(0xffffff, 0.5);
 lightBack.position.set(0, 0, -10);
 scene.add(lightBack);
 
@@ -49,24 +49,28 @@ const lightLeft = new THREE.DirectionalLight(0xffffff, 0.6);
 lightLeft.position.set(-10, 5, 10);
 scene.add(lightLeft);
 
+// ライト　- 下 -
+const lightBottom = new THREE.PointLight(0xffffff, 0.5);
+lightBottom.position.set(0, -10, 10);
+scene.add(lightBottom);
+
 // ライト　- 前 -
-const lightFront = new THREE.PointLight(0xffffff, 0.3);
+const lightFront = new THREE.PointLight(0xffffff, 0.2);
 lightFront.position.set(0, 0, 10);
 scene.add(lightFront);
 
 const loader = new GLTFLoader();
 
-loader.load('../../models/sp/rezent-sp.glb', (gltf) => {
+loader.load('/js/three/models/room-pc.glb', (gltf) => {
     const model = gltf.scene;
-    model.scale.set(8, 8, 8);
-    model.rotation.y = Math.PI / 1;
+    model.scale.set(6, 6, 6);
     scene.add(model);
     animate();
 }, undefined, (error) => {
     console.error('モデル読み込みエラー:', error);
 });
 
-camera.position.z = 25;
+camera.position.z = 23;
 
 window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
