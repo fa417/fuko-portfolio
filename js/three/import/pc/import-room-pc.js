@@ -61,7 +61,7 @@ scene.add(lightFront);
 
 const loader = new GLTFLoader();
 
-loader.load('../models/pc/room-pc.glb', (gltf) => {
+loader.load('../../models/pc/room-pc.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(6, 6, 6);
     scene.add(model);

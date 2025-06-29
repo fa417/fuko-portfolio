@@ -56,7 +56,7 @@ scene.add(lightFront);
 
 const loader = new GLTFLoader();
 
-loader.load('../models/sp/rezent-sp.glb', (gltf) => {
+loader.load('../../models/sp/rezent-sp.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(8, 8, 8);
     model.rotation.y = Math.PI / 1;

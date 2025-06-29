@@ -56,7 +56,7 @@ scene.add(lightBottom);
 
 const loader = new GLTFLoader();
 
-loader.load('../models/pc/yoga-pc.glb', (gltf) => {
+loader.load('../../models/pc/yoga-pc.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(8, 8, 8);
     scene.add(model);
