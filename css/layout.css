@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+/* whole */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*  */
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 10px 40px;
+}
+
+/*  */
+
+/* common */
+.container {
+  padding: 60px 40px;
+}
+
+.portfolio-item .container {
+  padding: 100px 40px 60px 40px;
+}
+
+.section-title {
+  margin: 30px 0;
+}
+
+.profile-wrapper,
+.works-wrapper,
+.skills-wrapper,
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.lp-content,
+.website-content {
+  width: 50%;
+}
+
+.lp-inner:not(:last-of-type),
+.website-inner:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+/*  */
+
+/* header */
+.main-menu {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.main-menu>ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 40px;
+  height: 60px;
+}
+
+.main-menu>ul>li>a {
+  padding: 20px;
+}
+
+.has-sub-menu {
+  position: relative;
+}
+
+.works-sub-menu {
+  display: none;
+  position: absolute;
+  top: 170%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.has-sub-menu.open>.works-sub-menu {
+  display: block;
+}
+
+.works-sub-menu li a {
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+}
+
+.menu-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/*  */
+
+/* top-container */
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*  */
+
+/* profile section */
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sp-text {
+  display: none;
+}
+
+/*  */
+
+/* works section */
+.works-wrapper {
+  text-align: center;
+}
+
+.lp-group {
+  margin: 40px 0;
+}
+
+.group-title {
+  margin-bottom: 30px;
+}
+
+.lp-group .group-inner,
+.app-group .group-inner {
+  width: 80%;
+  margin: auto;
+}
+
+.website-wrrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+.group-inner-title {
+  padding: 10px 0;
+}
+
+.sp-only {
+  display: none;
+}
+
+/*  */
+
+/* skills section */
+.chart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bar-fill {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+}
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--value, 0%);
+  transition: width 1.2s ease-in-out;
+}
+
+.bar-text {
+  margin-top: 10px;
+}
+
+/*  */
+
+/* contact section */
+.contact-wrapper a {
+  margin: 30px 0;
+  padding: 10px 50px;
+}
+
+/*  */
+
+/* zen yoga & rezent & my crochet room- page - */
+.page-name {
+  margin-bottom: 20px;
+}
+
+.page-links {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-links a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: auto;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.sp-img {
+  display: none;
+}
+
+.sp-text {
+  display: none;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.visual-block {
+  width: 50%;
+}
+
+.area-3d {
+  margin-top: 30px;
+}
+
+#yoga-pc,
+#rezent-pc,
+#room-pc {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#yoga-sp,
+#rezent-sp,
+#room-sp {
+  display: none;
+}
+
+#yoga-pc canvas,
+#rezent-pc canvas,
+#room-pc canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.screenshots {
+  width: 50%;
+}
+
+.concept-text-wrap {
+  padding: 20px;
+}
+
+
+/*  */
+
+/* whole */
+body {
+  font-size: 16px;
+}
+
+/*  */

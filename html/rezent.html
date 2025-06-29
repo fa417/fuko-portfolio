@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Alley 1950 - リーゼント専門理容室 -</title>
+  <link rel="icon" href="../img/favicon.webp">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <button id="menu-button" class="menu-button">Menu</button>
+    <nav class="main-menu" id="main-menu">
+      <ul>
+        <li><a href="../index.html#top">
+            Top
+          </a></li>
+        <li><a href="../index.html#profile">
+            Profile
+          </a></li>
+        <li class="has-sub-menu">
+          <a href="../index.html#works" class="works-menu-toggle">Works</a>
+          <ul class="works-sub-menu">
+            <li><a href="zen-yoga.html">Zen Yoga</a></li>
+            <li><a href="rezent.html" title="Back Alley 1950 - リーゼント専門理容室 -">Back Alley 1950 - リーゼント専門理容室 -</a></li>
+            <li><a href="my-crochet-room.html">My Crochet Room</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#skills">
+            Skills
+          </a></li>
+        <li><a href="../smain.html#contact">
+            Contact
+          </a></li>
+        <li><a href="#light" id="light-toggle">
+            Light
+          </a></li>
+        <li><a href="#dark" id="dark-toggle">
+            Dark
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-item">
+      <div class="container">
+        <h1 class="page-name">Black Alley 1950<br>- リーゼント専門理容室 -</h1>
+
+        <div class="page-links">
+          <a href="https://back-alley-1950.vercel.app/index.html">View Demo Site</a>
+        </div>
+
+        <picture class="picture">
+          <source srcset="../img/rezent/pc/top.webp" media="(min-width: 768px)">
+          <source srcset="../img/rezent/sp/top.webp" media="(max-width: 767px)">
+          <img src="../img/rezent/pc/top.webp" alt="Black Alley 1950 - リーゼント専門理容室 - トップ画像">
+        </picture>
+
+        <div class="portfolio-wrapper">
+
+          <div class="visual-block">
+
+            <div class="gallery">
+
+              <button class="arrow left-arrow">&#10094;</button>
+
+              <picture id="mainPicture">
+                <source media="(min-width: 768px)" srcset="../img/rezent/pc/1.webp">
+                <source media="(max-width: 767px)" srcset="../img/rezent/sp/1.webp">
+                <img id="mainImage" class="main-image" src="../img/rezent/pc/1.webp"
+                  alt="Black Alley 1950 - リーゼント専門理容室 - メイン画像" />
+              </picture>
+
+              <button class="arrow right-arrow">&#10095;</button>
+
+              <div class="thumbnails">
+                <img class="thumbnail selected" src="../img/rezent/pc/1.webp" alt="Black Alley 1950 - リーゼント専門理容室 - 画像1"
+                  data-pc="../img/rezent/pc/1.webp" data-sp="../img/rezent/sp/1.webp" />
+                <img class="thumbnail" src="../img/rezent/pc/2.webp" alt="Black Alley 1950 - リーゼント専門理容室 - 画像2"
+                  data-pc="../img/rezent/pc/2.webp" data-sp="../img/rezent/sp/2.webp" />
+                <img class="thumbnail" src="../img/rezent/pc/3.webp" alt="Black Alley 1950 - リーゼント専門理容室 - 画像3"
+                  data-pc="../img/rezent/pc/3.webp" data-sp="../img/rezent/sp/3.webp" />
+                <img class="thumbnail" src="../img/rezent/pc/4.webp" alt="Black Alley 1950 - リーゼント専門理容室 - 画像2"
+                  data-pc="../img/rezent/pc/4.webp" data-sp="../img/rezent/sp/4.webp" />
+                <img class="thumbnail" src="../img/rezent/pc/5.webp" alt="Black Alley 1950 - リーゼント専門理容室 - 画像3"
+                  data-pc="../img/rezent/pc/5.webp" data-sp="../img/rezent/sp/5.webp" />
+              </div>
+            </div>
+
+            <div class="area-3d">
+              <div id="rezent-pc"></div>
+              <div id="rezent-sp"></div>
+              <p class="hint">
+                360° view — drag to rotate
+              </p>
+            </div>
+
+          </div>
+
+          <div class="website-content">
+
+            <div class="website-inner">
+              <h2 class="item-title">Persona</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">個性的な髪型にこだわる30代男性を想定。リーゼントやレトロスタイルを好み、技術力のある理容室を求める層をターゲットにしています。</p>
+                <p class="sp-text">個性的な髪型を好む30代男性向け。リーゼントスタイルに対応した技術力の高い理容室をターゲットにしています。</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Concept</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  個性的な髪型にこだわる30代男性を想定し、リーゼントなどのレトロスタイルに特化した理容室紹介サイトを制作しました。リーゼントは単なる髪型ではなく、自己表現や美学の象徴でもあります。このサイトでは、リーゼントの種類やスタイルの特徴についても紹介し、初心者でもその魅力や違いがわかるように構成しています。デザインはレトロな雰囲気を大切にしつつ、技術への信頼感や“通いたくなる”安心感を伝えることを意識しました。
+                </p>
+                <p class="sp-text">
+                  個性的な髪型にこだわる30代男性向けに、リーゼントなどレトロスタイルに特化した理容室紹介サイトを制作しました。リーゼントの種類や特徴も紹介し、初心者にも魅力が伝わる構成です。デザインはレトロ感を大切にしつつ、技術力と安心感を表現しました。
+                </p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Technologies Used</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">HTML/CSS/JavaScript/Three.js/Blender/Photoshop</p>
+                <p class="sp-text">HTML/CSS/JavaScript/Three.js/Blender/Photoshop</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Duration</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">2025年2月中旬～2025年5月中旬（約3カ月）</p>
+                <p class="sp-text">2025年2月中旬～2025年5月中旬（約3カ月）</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Features</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  個性的な髪型にこだわる30代男性を想定し、リーゼントなどレトロスタイルに特化した理容室紹介サイトを制作しました。赤と青で男性らしさを、落ち着いた配色でレトロ感を表現。PC版では画面のサイドに3Dモデル（ポマードや椅子、はさみ）を配置し、360度回転で自由に閲覧できるインタラクションを加えています。スタイル紹介やメニューへの導線もわかりやすく設計しました。
+                </p>
+                <p class="sp-text">
+                  個性的な髪型を好む30代男性向けに、レトロスタイルに特化した理容室紹介サイトを制作。赤×青で男性らしさを、落ち着いた配色でレトロ感を演出。PCでは3Dモデルが回転表示され、インタラクションも楽しめます。
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Fuko Portfolio All Rights Reserved.</p>
+  </footer>
+  <script src="../js/main.js"></script>
+  <!-- 3dモデル用 -->
+  <script type="module" src="../js/three/import/pc/import-rezent-pc.js"></script>
+  <script type="module" src="../js/three/import/sp/import-rezent-sp.js"></script>
+</body>
+
+</html>

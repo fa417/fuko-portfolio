@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* font-family: 'Playfair Display', serif; */
+
+/* size */
+:root {
+  /* size */
+  --font-size-12px: 0.75rem;
+  --font-size-14px: 0.875rem;
+  --font-size-16px: 1rem;
+  --font-size-18px: 1.125rem;
+  --font-size-24px: 1.5rem;
+  --font-size-30px: 1.875rem;
+  --font-size-100px: 6.25rem;
+
+  /* weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+/*  */
+
+/* white color */
+:root {
+  --bg: #ffffff;
+  --main-text: #222222;
+  --sub-text: #666666;
+  --link: #b497bd;
+}
+
+/*  */
+
+/* dark color */
+[data-theme="dark"] {
+  --bg: #121212;
+  --main-text: #eeeeee;
+  --sub-text: #aaaaaa;
+  --link: #a285a8;
+}
+
+/*  */
+
+/* whole */
+body {
+  color: var(--main-text);
+  font-size: var(--font-size-18px);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: var(--font-weight-light);
+}
+
+/*  */
+
+/* footer */
+footer {
+  color: var(--sub-text);
+  font-size: var(--font-size-16px);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+}
+
+/*  */
+
+/* common */
+.section-title {
+  color: var(--link);
+  font-size: var(--font-size-30px);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.site-title {
+  color: var(--main-text);
+  font-size: var(--font-size-100px);
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.1rem;
+}
+
+/*  */
+
+/* header */
+.main-menu li a {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05rem;
+}
+
+.works-sub-menu li a {
+  font-size: var(--font-size-14px);
+}
+
+/*  */
+
+/* top-container */
+.top-sub-text {
+  color: var(--sub-text);
+}
+
+/*  */
+
+/* profile section */
+.pc-text {
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+/*  */
+
+/* works section */
+.works-wrapper p {
+  text-align: justify;
+}
+
+.works-content {
+  text-align: center;
+}
+
+.group-title {
+  font-size: var(--font-size-24px);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/*  */
+
+/* skills section */
+.label {
+  font-size: var(--font-size-24px);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-medium);
+}
+
+.numerical-value {
+  font-size: var(--font-size-24px);
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-weight: var(--font-weight-medium);
+}
+
+.bar-text {
+  color: var(--sub-text);
+  text-align: center;
+}
+
+/*  */
+
+/* contact section */
+.contact-wrapper a {
+  color: var(--bg);
+  font-size: var(--font-size-24px);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-bold);
+}
+
+/*  */
+
+/* zen yoga & rezent & my crochet room- page - */
+.page-name {
+  font-size: var(--font-size-30px);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.page-links a {
+  color: var(--bg);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.arrow {
+  font-size: var(--font-size-24px);
+}
+
+.hint {
+  color: var(--sub-text);
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.item-title {
+  color: var(--link);
+  font-size: var(--font-size-24px);
+  font-family: 'Playfair Display', serif;
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: 10px;
+}
+
+
+.concept-text-wrap .pc-text {
+  color: var(--sub-text);
+}
+
+/*  */

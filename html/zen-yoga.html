@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Yoga</title>
+  <link rel="icon" href="../img/favicon.webp">s
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <button id="menu-button" class="menu-button">Menu</button>
+    <nav class="main-menu" id="main-menu">
+      <ul>
+        <li><a href="../index.html#top">
+            Top
+          </a></li>
+        <li><a href="../index.html#profile">
+            Profile
+          </a></li>
+        <li class="has-sub-menu">
+          <a href="../index.html#workss" class="works-menu-toggle">Works</a>
+          <ul class="works-sub-menu">
+            <li><a href="zen-yoga.html">Zen Yoga</a></li>
+            <li><a href="rezent.html" title="Back Alley 1950 - リーゼント専門理容室 -">Back Alley 1950 - リーゼント専門理容室 -</a></li>
+            <li><a href="my-crochet-room.html">My Crochet Room</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#skills">
+            Skills
+          </a></li>
+        <li><a href="../index.html#contact">
+            Contact
+          </a></li>
+        <li><a href="#light" id="light-toggle">
+            Light
+          </a></li>
+        <li><a href="#dark" id="dark-toggle">
+            Dark
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-item">
+      <div class="container">
+        <h1 class="page-name">Zen Yoga</h1>
+
+        <div class="page-links">
+          <a href="https://zen-yoga.vercel.app/">View Demo Site</a>
+        </div>
+
+        <picture class="picture">
+          <source srcset="../img/zen-yoga/pc/top.webp" media="(min-width: 768px)">
+          <source srcset="../img/zen-yoga/sp/top.webp" media="(max-width: 767px)">
+          <img src="../img/zen-yoga/pc/top.webp" alt="Zen Yoga トップ画像">
+        </picture>
+
+        <div class="portfolio-wrapper">
+
+          <div class="visual-block">
+
+            <div class="gallery">
+
+              <button class="arrow left-arrow">&#10094;</button>
+
+              <picture id="mainPicture">
+                <source media="(min-width: 768px)" srcset="../img/zen-yoga/pc/1.webp">
+                <source media="(max-width: 767px)" srcset="../img/zen-yoga/sp/1.webp">
+                <img id="mainImage" class="main-image" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga メイン画像" />
+              </picture>
+
+              <button class="arrow right-arrow">&#10095;</button>
+
+              <div class="thumbnails">
+                <img class="thumbnail selected" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga 画像1"
+                  data-pc="../img/zen-yoga/pc/1.webp" data-sp="../img/zen-yoga/sp/1.webp" />
+                <img class="thumbnail" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga 画像2"
+                  data-pc="../img/zen-yoga/pc/2.webp" data-sp="../img/zen-yoga/sp/2.webp" />
+                <img class="thumbnail" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga 画像3"
+                  data-pc="../img/zen-yoga/pc/3.webp" data-sp="../img/zen-yoga/sp/3.webp" />
+                <img class="thumbnail" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga 画像2"
+                  data-pc="../img/zen-yoga/pc/4.webp" data-sp="../img/zen-yoga/sp/4.webp" />
+                <img class="thumbnail" src="../img/zen-yoga/pc/1.webp" alt="Zen Yoga 画像3"
+                  data-pc="../img/zen-yoga/pc/5.webp" data-sp="../img/zen-yoga/sp/5.webp" />
+              </div>
+            </div>
+
+            <div class="area-3d">
+              <!-- パソコン -->
+              <div id="yoga-pc"></div>
+              <!-- スマートフォン -->
+              <div id="yoga-sp"></div>
+              <p class="hint">
+                360° view — drag to rotate
+              </p>
+            </div>
+          </div>
+
+          <div class="lp-content">
+
+            <div class="lp-inner">
+              <h2 class="item-title">Persona</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">忙しい毎日を送る30代女性を想定し、心と体のリフレッシュをサポートするヨガスタジオ紹介サイトを制作。気軽に通える安心感と、やさしさの伝わるデザインを意識しました。</p>
+                <p class="sp-text">忙しい30代女性向けに、心と体をリフレッシュできるヨガスタジオ紹介サイトを制作。気軽に通えて安心感のある、やさしいデザインを目指しました。</p>
+              </div>
+            </div>
+
+            <div class="lp-inner">
+              <h2 class="item-title">Concept</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">本サイトは、年齢やライフスタイルを問わず、
+                  どなたでも気軽に通えるヨガスタジオの紹介を目的としたデザインです。講師の年齢層も幅広く、初心者からシニア世代まで、さまざまな方に対応できる環境を意識しています。また、手ぶらで通えるレンタルサービスなど、続けやすさ・通いやすさにも配慮し、自分のペースで心身を整えられる空間づくりを目指しました。
+                </p>
+                <p class="sp-text">
+                  年齢や生活スタイルを問わず、どなたでも気軽に通えるヨガスタジオ紹介サイトです。初心者からシニアまで幅広い層に対応し、手ぶらで通えるレンタルサービスも完備。自分のペースで心身を整えられる安心の空間づくりを目指しました。
+                </p>
+              </div>
+            </div>
+
+            <div class="lp-inner">
+              <h2 class="item-title">Technologies Used</h2>
+              <div class="concept-text-wrap">
+                <p class="pc-text">HTML/CSS/JavaScript/Photoshop</p>
+                <p class="sp-text">HTML/CSS/JavaScript/Photoshop</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Duration</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">2025年4月上旬～2025年4月下旬（約3週間）</p>
+                <p class="sp-text">2025年4月上旬～2025年4月下旬（約3週間）</p>
+              </div>
+            </div>
+
+            <div class="lp-inner">
+              <h2 class="item-title">Features</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  デザインは、女性の若年層からご年配の方まで幅広い層に親しんでいただけるよう、やさしいブルー・ピンク・白を基調としています。また、朝夜問わず通いやすいスタジオの特徴が一目で伝わるよう、トップページのバナーでその魅力を明確に打ち出しました。
+                </p>
+                <p class="sp-text">
+                  デザインは若い女性からご年配まで親しみやすい、やさしいブルー・ピンク・白を基調にしました。朝晩どちらでも通いやすいスタジオの特徴は、トップページのバナーでわかりやすく表現しました。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Fuko Portfolio All Rights Reserved.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <!-- 3dモデル用 -->
+  <script type="module" src="../js/three/import/pc/import-yoga-pc.js"></script>
+  <script type="module" src="../js/three/import/sp/import-yoga-sp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Crochet Room</title>
+  <link rel="icon" href="../img/favicon.webp">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <button id="menu-button" class="menu-button">Menu</button>
+    <nav class="main-menu" id="main-menu">
+      <ul>
+        <li><a href="../index.html#top">
+            Top
+          </a></li>
+        <li><a href="../index.html#profile">
+            Profile
+          </a></li>
+        <li class="has-sub-menu">
+          <a href="../index.html#works" class="works-menu-toggle">Works</a>
+          <ul class="works-sub-menu">
+            <li><a href="zen-yoga.html">Zen Yoga</a></li>
+            <li><a href="rezent.html" title="Back Alley 1950 - リーゼント専門理容室 -">Back Alley 1950 - リーゼント専門理容室 -</a></li>
+            <li><a href="my-crochet-room.html">My Crochet Room</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#skills">
+            Skills
+          </a></li>
+        <li><a href="../index.html#contact">
+            Contact
+          </a></li>
+        <li><a href="#light" id="light-toggle">
+            Light
+          </a></li>
+        <li><a href="#dark" id="dark-toggle">
+            Dark
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-item">
+      <div class="container">
+        <h1 class="page-name">My Crochet Room</h1>
+
+        <div class="page-links">
+          <a href="https://my-crochet-room.vercel.app/">View Demo Site</a>
+        </div>
+
+        <picture class="picture">
+          <source srcset="../img/my-crochet-room/pc/top.webp" media="(min-width: 768px)">
+          <source srcset="../img/my-crochet-room/sp/top.webp" media="(max-width: 767px)">
+          <img src="../img/my-crochet-room/pc/top.webp" alt="My Crochet Room トップ画像">
+        </picture>
+
+        <div class="portfolio-wrapper">
+
+          <div class="visual-block">
+
+            <div class="gallery">
+
+              <button class="arrow left-arrow">&#10094;</button>
+
+              <picture id="mainPicture">
+                <source media="(min-width: 768px)" srcset="../img/my-crochet-room/pc/1.webp">
+                <source media="(max-width: 767px)" srcset="../img/my-crochet-room/sp/1.webp">
+                <img id="mainImage" class="main-image" src="../img/my-crochet-room/pc/1.webp"
+                  alt="My Crochet Room メイン画像" />
+              </picture>
+
+              <button class="arrow right-arrow">&#10095;</button>
+
+              <div class="thumbnails">
+                <img class="thumbnail selected" src="../img/my-crochet-room/pc/1.webp" alt="My Crochet Room 画像1"
+                  data-pc="../img/my-crochet-room/pc/1.webp" data-sp="../img/my-crochet-room/sp/1.webp" />
+                <img class="thumbnail" src="../img/my-crochet-room/pc/2.webp" alt="My Crochet Room 画像2"
+                  data-pc="../img/my-crochet-room/pc/2.webp" data-sp="../img/my-crochet-room/sp/2.webp" />
+                <img class="thumbnail" src="../img/my-crochet-room/pc/3.webp" alt="My Crochet Room 画像3"
+                  data-pc="../img/my-crochet-room/pc/3.webp" data-sp="../img/my-crochet-room/sp/3.webp" />
+                <img class="thumbnail" src="../img/my-crochet-room/pc/4.webp" alt="My Crochet Room 画像2"
+                  data-pc="../img/my-crochet-room/pc/4.webp" data-sp="../img/my-crochet-room/sp/4.webp" />
+                <img class="thumbnail" src="../img/my-crochet-room/pc/5.webp" alt="My Crochet Room 画像3"
+                  data-pc="../img/my-crochet-room/pc/5.webp" data-sp="../img/my-crochet-room/sp/5.webp" />
+              </div>
+            </div>
+
+            <div class="area-3d">
+              <div id="room-pc"></div>
+              <div id="room-sp"></div>
+              <p class="hint">
+                360° view — drag to rotate
+              </p>
+            </div>
+          </div>
+
+          <div class="website-content">
+
+            <div class="website-inner">
+              <h2 class="item-title">Persona</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  ハンドメイドが好きな30代女性を想定。平日は会社員として働きながら、週末や夜の時間に編み物を楽しむ。将来的にはネット販売も視野に入れ、趣味と実益を兼ねたものづくりに関心のある層をターゲットにしています。
+                </p>
+                <p class="sp-text">ハンドメイド好きな30代女性向け。平日は会社員、週末や夜に編み物を楽しみ、将来はネット販売も視野に入れる層を想定しています。</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Concept</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  編み物やハンドメイドの魅力を発信し、同じ趣味を持つ人と繋がることを目的に制作したサイトです。実際に制作した作品を紹介するだけでなく、訪れた人が楽しめるよう、3D空間で再現した「裁縫部屋」を用意しました。「かわいさ」と「使いやすさ」の両立を意識し、配色や構成、操作性にこだわっています。編み物の楽しさが伝わる、あたたかみのある世界観づくりを目指しました。
+                </p>
+                <p class="sp-text">
+                  編み物やハンドメイドの魅力を発信するサイトです。3Dで再現した裁縫部屋で作品を紹介し、かわいさと使いやすさを両立したあたたかい世界観を目指しました。
+                </p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Technologies Used</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">HTML/CSS/JavaScript/Three.js/Blender/Photoshop</p>
+                <p class="sp-text">HTML/CSS/JavaScript/Three.js/Blender/Photoshop</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Duration</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">2025年5月中旬～2025年6月末（約1か月半）</p>
+                <p class="sp-text">2025年5月中旬～2025年6月末（約1か月半）</p>
+              </div>
+            </div>
+
+            <div class="website-inner">
+              <h2 class="item-title">Features</h2>
+
+              <div class="concept-text-wrap">
+                <p class="pc-text">
+                  BlenderとThree.jsを用いて、手作り感のある裁縫部屋を3Dで再現しました。訪問者が実際に空間を歩き回るような感覚で楽しめるように設計し、机や本棚といったインタラクティブな要素を通じて、作品ジャンル別にコンテンツを閲覧できる導線を構築しています。展示している編み物作品はすべて自身で制作・撮影したもので、空間との一体感にも配慮しました。配色は淡いトーンと自然光の表現でやさしく落ち着いた印象に。サイト全体はPC閲覧を前提としたシンプルなUIで構成し、ユーザーが迷わず快適に閲覧できるよう工夫しています。
+                </p>
+                <p class="sp-text">
+                  BlenderとThree.jsで手作り感ある裁縫部屋を3D再現。机や本棚などから作品ジャンル別に閲覧でき、編み物作品はすべて自作・撮影。淡い色味と自然光でやさしい雰囲気に仕上げました。</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Fuko Portfolio All Rights Reserved.</p>
+  </footer>
+  <script src="../js/main.js"></script>
+  <!-- 3dモデル用 -->
+  <script type="module" src="../js/three/import/pc/import-room-pc.js"></script>
+  <script type="module" src="../js/three/import/sp/import-room-sp.js"></script>
+</body>
+
+</html>

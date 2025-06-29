@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* white color */
+:root {
+  --bg: #ffffff;
+  --main-text: #222222;
+  --sub-text: #666666;
+  --link: #b497bd;
+}
+
+/*  */
+
+/* dark color */
+[data-theme="dark"] {
+  --bg: #121212;
+  --main-text: #eeeeee;
+  --sub-text: #aaaaaa;
+  --link: #a285a8;
+}
+
+/*  */
+
+/* whole */
+body {
+  background: var(--bg);
+}
+
+/*  */
+
+
+/* footer */
+footer {
+  border: 1px solid var(--sub-text);
+}
+
+/*  */
+
+/* common */
+/*  */
+
+/* header */
+.main-menu ul {
+  background: var(--bg);
+}
+
+.main-menu li a:hover {
+  color: var(--bg);
+  background: var(--link);
+}
+
+.main-menu li a:active {
+  color: var(--bg);
+  background: var(--link);
+}
+
+.works-sub-menu {
+  background: var(--bg);
+  border: 1px solid var(--sub-text);
+}
+
+.menu-button:hover {
+  background: var(--link);
+}
+
+.menu-button:active {
+  background: var(--link);
+}
+
+/*  */
+
+/* profile section */
+.profile-img {
+  width: 25%;
+}
+
+/*  */
+
+/* work section */
+.group-inner {
+  border: 1px solid var(--main-text);
+}
+
+.group-inner-title {
+  border-top: 1px solid var(--main-text);
+}
+
+.group-inner-title:hover {
+  color: var(--bg);
+  background: var(--link);
+}
+
+.group-inner-title:active {
+  color: var(--bg);
+  background: var(--link);
+}
+
+/*  */
+
+/* skills section */
+.bar-fill {
+  background: var(--bg);
+  border: 1px solid var(--sub-text);
+}
+
+.bar-fill::after {
+  background: var(--sub-text);
+}
+
+/*  */
+
+/* contact section */
+.contact-wrapper a {
+  background: var(--link);
+  border-radius: 50px;
+}
+
+.contact-wrapper a:hover {
+  color: var(--link);
+  background: var(--bg);
+  border: 1px solid var(--link);
+}
+
+.contact-wrapper a:active {
+  color: var(--link);
+  background: var(--bg);
+  border: 1px solid var(--link);
+}
+
+/*  */
+
+/* zen yoga & rezent & my crochet room- page - */
+.page-links a {
+  background: var(--link);
+  border-radius: 30px;
+}
+
+.page-links a:hover {
+  color: var(--link);
+  background: var(--bg);
+  border: 1px solid var(--link);
+}
+
+.page-links a:active {
+  color: var(--link);
+  background: var(--bg);
+  border: 1px solid var(--link);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--sub-text);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.gallery {
+  position: relative;
+}
+
+.picture img {
+  border: 1px solid var(--main-text);
+}
+
+.main-image {
+  border: 1px solid var(--sub-text);
+}
+
+.thumbnail.selected {
+  border-color: var(--sub-text);
+}
+
+.main-image {
+  border: 2px solid var(--sub-text);
+}
+
+.concept-text-wrap {
+  border: 1px solid var(--main-text);
+  border-radius: 20px;
+}
+
+/*  */

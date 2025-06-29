@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuko Portfolio</title>
+  <link rel="icon" href="./img/favicon.webp">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header>
+    <button id="menu-button" class="menu-button">Menu</button>
+    <nav class="main-menu" id="main-menu">
+      <ul>
+        <li><a href="#top">
+            Top
+          </a></li>
+        <li><a href="#profile">
+            Profile
+          </a></li>
+        <li class="has-sub-menu">
+          <a href="#works" class="works-menu-toggle">Works</a>
+          <ul class="works-sub-menu">
+            <li><a href="./html/zen-yoga.html">Zen Yoga</a></li>
+            <li><a href="./html/rezent.html" title="Back Alley 1950 - リーゼント専門理容室 -">Back Alley 1950 - リーゼント専門理容室 -</a>
+            </li>
+            <li><a href="./html/my-crochet-room.html">My Crochet Room</a></li>
+          </ul>
+        </li>
+        <li><a href="#skills">
+            Skills
+          </a></li>
+        <li><a href="#contact">
+            Contact
+          </a></li>
+        <li><a href="#light" id="light-toggle">
+            Light
+          </a></li>
+        <li><a href="#dark" id="dark-toggle">
+            Dark
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="top">
+      <div class="top-container" id="top">
+        <h1 class="site-title">Fuko Portfolio</h1>
+        <p class="top-sub-text">ここではさまざまな作品をご紹介しています。</p>
+        <p class="top-sub-text">ぜひごゆっくりご覧ください。</p>
+      </div>
+    </section>
+
+    <section class="profile">
+      <div class="container" id="profile">
+
+        <div class="profile-wrapper">
+          <h2 class="section-title">Profile</h2>
+
+          <div class="profile-content">
+            <img src="./img/profile.webp" alt="プロフィール画像" class="profile-img">
+
+            <div class="profile-detail">
+              <p class="pc-text">
+                高校卒業後に上京。コールセンターや飲食店で働くなか、「手に職をつけたい」と思い独学でPhotoshopとIllustratorを学び始めました。その後、Webデザインスクールに1年間通い、WordPressのテーマ制作を通してWeb制作の基礎を習得。卒業後はカスタマーサクセス職に就き、Photoshopで画像作成を担当。HTML・CSSやJavaScriptによる簡単な実装も経験しました。実務でコードに触れる楽しさを知り、より自由なものづくりを目指して退職。現在はポートフォリオ制作を通してスキルを見つめ直し、表現の幅を広げることを目指しています。
+              </p>
+              <p class="sp-text">
+                PhotoshopとIllustratorを独学で学び、後にWebデザインスクールでWordPressやWeb制作の基礎を習得。卒業後はカスタマーサクセス職で画像作成や簡単なコーディングも担当。現在はポートフォリオ制作を通じて表現力を高めています。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="works">
+      <div class="container" id="works">
+
+        <div class="works-wrapper">
+
+          <h2 class="section-title">Works</h2>
+          <p>ここでは私が制作したウェブサイトや3Dモデルなどの作品をご紹介します。
+            使用技術や制作のポイントも記載していますので、ご覧ください。
+          </p>
+
+
+          <div class="works-content">
+
+            <div class="lp-group">
+              <h3 class="group-title">- LP -</h3>
+
+              <a href="./html/zen-yoga.html">
+                <div class="group-inner">
+                  <picture>
+                    <source srcset="./img/zen-yoga/pc/top.webp" media="(min-width: 768px)">
+                    <source srcset="./img/zen-yoga/sp/top.webp" media="(max-width: 767px)">
+                    <img src="./img/zen-yoga/pc/top.webp" alt="Zen Yoga">
+                  </picture>
+
+                  <div class="group-inner-title">Zen Yoga</div>
+                </div>
+              </a>
+
+            </div>
+
+
+            <div class="website-group">
+              <h3 class="group-title">- Website -</h3>
+
+              <div class="website-wrrapper">
+
+                <a href="./html/rezent.html">
+                  <div class="group-inner">
+                    <picture>
+                      <source srcset="./img/rezent/pc/top.webp" media="(min-width: 768px)">
+                      <source srcset="./img/rezent/sp/top.webp" media="(max-width: 767px)">
+                      <img src="./img/rezent/pc/top.webp" alt="Back Alley 1950 - リーゼント専門理容室 -">
+                    </picture>
+
+                    <div class="group-inner-title">Back Alley 1950<br class="sp-only">- リーゼント専門理容室 -</div>
+                  </div>
+                </a>
+
+                <a href="./html/my-crochet-room.html">
+                  <div class="group-inner">
+                    <picture>
+                      <source srcset="./img/my-crochet-room/pc/top.webp" media="(min-width: 768px)">
+                      <source srcset="./img/my-crochet-room/sp/top.webp" media="(max-width: 767px)">
+                      <img src="./img/my-crochet-room/pc/top.webp" alt="My Crochet Room">
+                    </picture>
+
+                    <div class="group-inner-title">My Crochet Room</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+
+
+            <div class="app-group">
+              <h3 class="group-title">- App -</h3>
+
+              <a href="#">
+                <div class="group-inner">
+                  <picture>
+                    <source srcset="./img/app-pc.webp" media="(min-width: 768px)">
+                    <source srcset="./img/app-sp.webp" media="(max-width: 767px)">
+                    <img src="./img/app-pc.webp" alt="">
+                  </picture>
+
+                  <div class="group-inner-title">準備中</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container" id="skills">
+
+        <div class="skills-wrapper">
+          <h2 class="section-title">Skills</h2>
+          <p>実務経験や制作経験をもとに、習得度合いをパーセンテージで示しています。現在も日々成長を続けており、今後も実務で活かせるレベルを目指して努力していきます。</p>
+
+          <div class="chart-content">
+            <div class="bar">
+              <h4 class="label">Photoshop<span class="numerical-value">70%</span></h4>
+              <div class="bar-fill" style="--value: 70%"></div>
+              <p class="bar-text">実務経験あり。バナーや施策制作、簡単なデザイン作成を担当していました。</p>
+            </div>
+
+            <div class="bar">
+              <h4 class="label">Blender<span class="numerical-value">50%</span></h4>
+              <div class="bar-fill" style="--value: 50%"></div>
+              <p class="bar-text">裁縫部屋やリーゼント理容室の3Dモデリングで使用。基礎操作とシーン構築が可能です。</p>
+            </div>
+
+            <div class="bar">
+              <h4 class="label">HTML/CSS<span class="numerical-value">60%</span></h4>
+              <div class="bar-fill" style="--value: 60%"></div>
+              <p class="bar-text">構造設計やスタイリングに慣れており、レスポンシブ対応やパーツの再利用も意識しています。</p>
+            </div>
+
+            <div class="bar">
+              <h4 class="label">JavaScript<span class="numerical-value">20%</span></h4>
+              <div class="bar-fill" style="--value: 20%"></div>
+              <p class="bar-text">軽微なアニメーションやDOM操作の基礎に取り組み中。今後も継続的に学習予定です。</p>
+            </div>
+
+            <div class="bar">
+              <h4 class="label">WordPress<span class="numerical-value">50%</span></h4>
+              <div class="bar-fill" style="--value: 50%"></div>
+              <p class="bar-text">自作テーマを一から構築し、サイト全体を動かす実装経験あり。PHPは基礎理解レベル。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container" id="contact">
+        <div class="contact-wrapper">
+          <h2 class="section-title">Contact</h2>
+          <p>ポートフォリオや制作物についてのご質問、ご依頼、ご相談は以下の連絡先までお願いいたします。</p>
+          <a href="mailto:odoufu735@gmail.com">Contact me by email.</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Fuko Portfolio All Rights Reserved.</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
