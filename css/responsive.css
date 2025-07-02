@@ -238,7 +238,7 @@
 
   .main-menu>ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     height: 100%;
     padding: 60px 20px 20px;
     margin: 0;
@@ -247,6 +247,10 @@
   .main-menu>ul>li>a {
     font-size: var(--font-size-16px);
     padding: 10px 20px;
+  }
+
+  .works-sub-menu li a {
+    font-size: var(--font-size-16px);
   }
 
   .has-sub-menu {
@@ -258,12 +262,18 @@
     display: block;
     position: static;
     margin: 5px 0;
+    text-align: left;
   }
 
   .works-sub-menu li a {
     padding: 0 0 0 10px;
     width: 100px;
   }
+
+  .works-sub-menu li:not(:last-child) a {
+    margin-bottom: 10px;
+  }
+
 
   /*  */
 
@@ -275,7 +285,7 @@
   /*  */
 
   /* profile section */
- .profile-img {
+  .profile-img {
     width: 18%;
   }
 
@@ -387,7 +397,7 @@
   #room-sp {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 250px;
     position: relative;
   }
 
@@ -418,17 +428,17 @@
     width: 100px;
   }
 
-  .main-menu>ul {
-    gap: 10px;
-  }
-
   .main-menu>ul>li>a {
     padding: 5px 20px;
   }
 
   .works-sub-menu li a {
     padding: 0 0 0 5px;
-    font-size: var(--font-size-12px);
+    font-size: var(--font-size-16px);
+  }
+
+  .works-sub-menu li:not(:last-child) a {
+    margin-bottom: 5px;
   }
 
   /* works section */
@@ -445,8 +455,9 @@
     display: block;
   }
 
-  .website-group .group-inner:not(:last-of-type) {
+  .website-wrrapper a:not(:last-child) {
     margin-bottom: 20px;
+    display: block;
   }
 
   /*  */
@@ -486,7 +497,7 @@
   #yoga-sp,
   #rezent-sp,
   #room-sp {
-    height: 300px;
+    height: 200px;
   }
 
   .website-inner:not(:last-of-type) {
@@ -495,3 +506,6 @@
 
   /*  */
 }
+
+/* 〜377px */
+@media (max-width: 377px) {}
