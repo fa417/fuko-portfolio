@@ -60,9 +60,8 @@ const loader = new GLTFLoader();
 
 loader.load('/js/three/models/yoga-sp.glb', (gltf) => {
     const model = gltf.scene;
-    model.scale.set(3, 4, 4);
+    model.scale.set(5, 5, 5);
     model.rotation.y = Math.PI / 1;
-    model.position.z = -5; 
     scene.add(model);
     animate();
 }, undefined, (error) => {
