@@ -238,7 +238,7 @@
 
   .main-menu>ul {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     height: 100%;
     padding: 60px 20px 20px;
     margin: 0;
@@ -261,12 +261,12 @@
     border: none;
     display: block;
     position: static;
-    margin: 5px 0;
+    margin: 20px 0;
     text-align: left;
   }
 
   .works-sub-menu li a {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 30px;
     width: 100px;
   }
 
@@ -428,17 +428,21 @@
     width: 100px;
   }
 
+  .main-menu>ul {
+    gap: 30px;
+  }
+
   .main-menu>ul>li>a {
     padding: 5px 20px;
+  }
+
+  .works-sub-menu {
+    margin: 10px 0;
   }
 
   .works-sub-menu li a {
     padding: 0 0 0 5px;
     font-size: var(--font-size-16px);
-  }
-
-  .works-sub-menu li:not(:last-child) a {
-    margin-bottom: 5px;
   }
 
   /* works section */
