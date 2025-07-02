@@ -21,9 +21,23 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });  // alpha: trueで背景を透明にする
 scene.background = null;
 
-renderer.setSize(width, height);
-camera.aspect = width / height;
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+// canvas を親要素に追加
+canvasContainer.appendChild(renderer.domElement);
+
+// カメラのアスペクトも合わせる
+camera.aspect = window.innerWidth / window.innerHeight;
 camera.updateProjectionMatrix();
+
+window.addEventListener('resize', () => {
+    const width = canvasContainer.clientWidth;
+    const height = canvasContainer.clientHeight;
+
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+});
 
 canvasContainer.appendChild(renderer.domElement);
 

@@ -392,6 +392,12 @@
     display: none;
   }
 
+  canvas{
+    width: 300px !important;
+    height: 250px !important;
+    margin: auto;
+  }
+
   #yoga-sp,
   #rezent-sp,
   #room-sp {
@@ -410,8 +416,6 @@
     width: 100%;
     margin-top: 20px;
   }
-
-
 
   /*  */
 }
