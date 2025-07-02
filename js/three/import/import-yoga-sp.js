@@ -21,23 +21,11 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });  // alpha: trueで背景を透明にする
 scene.background = null;
 
-renderer.setSize(window.innerWidth, window.innerHeight);
-
-// canvas を親要素に追加
-canvasContainer.appendChild(renderer.domElement);
-
-// カメラのアスペクトも合わせる
-camera.aspect = window.innerWidth / window.innerHeight;
+renderer.setSize(width, height);
+camera.aspect = width / height;
 camera.updateProjectionMatrix();
 
-window.addEventListener('resize', () => {
-    const width = canvasContainer.clientWidth;
-    const height = canvasContainer.clientHeight;
-
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-    renderer.setSize(width, height);
-});
+canvasContainer.appendChild(renderer.domElement);
 
 canvasContainer.appendChild(renderer.domElement);
 
@@ -72,7 +60,7 @@ const loader = new GLTFLoader();
 
 loader.load('/js/three/models/yoga-sp.glb', (gltf) => {
     const model = gltf.scene;
-    model.scale.set(3, 3, 3);
+    model.scale.set(3, 4, 4);
     model.rotation.y = Math.PI / 1;
     model.position.z = -5; 
     scene.add(model);
