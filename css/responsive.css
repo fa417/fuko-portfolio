@@ -266,7 +266,7 @@
   }
 
   .works-sub-menu li a {
-    padding: 0 0 0 30px;
+    /* padding: 0 0 0 30px; */
     width: 100px;
   }
 
@@ -505,10 +505,8 @@
     margin: 0;
   }
 
-  #yoga-sp,
-  #rezent-sp,
-  #room-sp {
-    height: 200px;
+   .hint{
+    margin-top: 10px;
   }
 
   .website-inner:not(:last-of-type) {
