@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener('click', (e) => {
       const href = toggle.getAttribute('href');
 
-      // href が "#" のときだけ preventDefault を実行
       if (href === '#') {
         e.preventDefault();
       }
@@ -18,6 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       menuItem.classList.toggle('open');
+    });
+  });
+
+  document.querySelectorAll('.demo-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const isMobile = window.innerWidth <= 768;
+      if (!isMobile) {
+        e.preventDefault();
+        window.open(this.href, '_blank', 'noopener');
+      }
     });
   });
 
