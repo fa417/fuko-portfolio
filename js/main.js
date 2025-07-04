@@ -3,12 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('.works-menu-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
-      const href = toggle.getAttribute('href');
-
       const isMobile = window.innerWidth <= 768;
 
-      if (isMobile && href && href.startsWith('#')) {
+      if (isMobile) {
         e.preventDefault();
+        e.stopImmediatePropagation();
       }
 
       const menuItem = toggle.closest('.has-sub-menu');
@@ -19,15 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       menuItem.classList.toggle('open');
-    });
-  });
 
-  document.querySelectorAll('.demo-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-      const isMobile = window.innerWidth <= 768;
-      if (!isMobile) {
-        e.preventDefault();
-        window.open(this.href, '_blank', 'noopener');
+      if (isMobile) {
+        const subMenu = menuItem.querySelector('.works-sub-menu');
+        if (subMenu) {
+          subMenu.classList.add('temp-disable');
+          setTimeout(() => {
+            subMenu.classList.remove('temp-disable');
+          }, 300);
+        }
       }
     });
   });

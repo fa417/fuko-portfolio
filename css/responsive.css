@@ -273,6 +273,9 @@
     margin-bottom: 10px;
   }
 
+  .works-sub-menu.temp-disable {
+    pointer-events: none;
+  }
 
   /*  */
 
