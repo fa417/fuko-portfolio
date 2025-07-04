@@ -460,7 +460,8 @@
     display: block;
   }
 
-  .website-wrrapper a:not(:last-child) {
+  .website-wrapper a:not(:last-child) {
+    display: block;
     margin-bottom: 20px;
   }
 
@@ -508,6 +509,3 @@
 
   /*  */
 }
-
-/* 〜377px */
-@media (max-width: 377px) {}
