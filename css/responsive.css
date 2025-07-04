@@ -255,14 +255,10 @@
 
   .works-sub-menu {
     border: none;
-    display: none;
+    display: block;
     position: static;
     margin: 20px 0;
     text-align: left;
-  }
-
-  .has-sub-menu.open .works-sub-menu {
-    display: block;
   }
 
   .works-sub-menu li a {
@@ -271,11 +267,6 @@
 
   .works-sub-menu li:not(:last-child) a {
     margin-bottom: 10px;
-  }
-
-  .works-sub-menu.temp-disable {
-    pointer-events: none;
-    background-color: rgba(255, 0, 0, 0.1);
   }
 
   /*  */
