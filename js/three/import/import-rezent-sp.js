@@ -50,7 +50,7 @@ lightLeft.position.set(-10, 5, 10);
 scene.add(lightLeft);
 
 // ライト　- 前 -
-const lightFront = new THREE.PointLight(0xffffff, 0.3);
+const lightFront = new THREE.PointLight(0xffffff, 0.2);
 lightFront.position.set(0, 0, 10);
 scene.add(lightFront);
 
