@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener('click', (e) => {
       const href = toggle.getAttribute('href');
 
-      if (href === '#') {
-        e.preventDefault();
+      if (href && href.startsWith('#')) {
+        e.preventDefault();           // ← スクロールを止める
+        e.stopPropagation();
       }
 
       const menuItem = toggle.closest('.has-sub-menu');

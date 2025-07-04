@@ -253,16 +253,17 @@
     font-size: var(--font-size-16px);
   }
 
-  .has-sub-menu {
-    position: unset;
-  }
-
   .works-sub-menu {
     border: none;
-    display: block;
+    display: none;
     position: static;
     margin: 20px 0;
     text-align: left;
+  }
+
+  .has-sub-menu.open .works-sub-menu {
+    display: block;
+    /* ← これですでにopen時だけ表示 */
   }
 
   .works-sub-menu li a {
@@ -392,7 +393,7 @@
     display: none;
   }
 
-  canvas{
+  canvas {
     width: 100% !important;
     height: 100% !important;
     margin: auto;
@@ -406,7 +407,7 @@
     height: 300px;
   }
 
-  .hint{
+  .hint {
     margin-top: 20px;
   }
 
@@ -505,7 +506,7 @@
     margin: 0;
   }
 
-   .hint{
+  .hint {
     margin-top: 10px;
   }
 
