@@ -1,39 +1,37 @@
 // メニュー
 document.addEventListener("DOMContentLoaded", () => {
-
   document.querySelectorAll('.works-menu-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
       const isMobile = window.innerWidth <= 768;
+      const menuItem = toggle.closest('.has-sub-menu');
+      if (!menuItem) return;
+
+      const subMenu = menuItem.querySelector('.works-sub-menu');
 
       if (isMobile) {
         e.preventDefault();
         e.stopImmediatePropagation();
-      }
 
-      const menuItem = toggle.closest('.has-sub-menu');
-      if (!menuItem) return;
-
-      document.querySelectorAll('.has-sub-menu.open').forEach(openItem => {
-        if (openItem !== menuItem) openItem.classList.remove('open');
-      });
-
-      menuItem.classList.toggle('open');
-
-      if (isMobile) {
-        const subMenu = menuItem.querySelector('.works-sub-menu');
+        // 誤タップ防止の pointer-events: none を一時的に付与
         if (subMenu) {
           subMenu.classList.add('temp-disable');
           setTimeout(() => {
             subMenu.classList.remove('temp-disable');
-          }, 300);
+          }, 300); // 300ms 後に有効化（指離れるまで無効）
         }
       }
+
+      // 他の開いてるメニューを閉じる
+      document.querySelectorAll('.has-sub-menu.open').forEach(openItem => {
+        if (openItem !== menuItem) openItem.classList.remove('open');
+      });
+
+      // 現在のメニューを開閉
+      menuItem.classList.toggle('open');
     });
   });
 
-  //
-
-  //ライトモード
+  // ライトモード切替
   const lightToggle = document.getElementById('light-toggle');
   if (lightToggle) {
     lightToggle.addEventListener('click', (e) => {
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // 
 
-  //ダークモード切替
+  // ダークモード切替
   const darkToggle = document.getElementById('dark-toggle');
   if (darkToggle) {
     darkToggle.addEventListener('click', (e) => {
@@ -53,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // 
 
-  //SPメニュー
+  // SPメニュー
   const menuButton = document.getElementById('menu-button');
   const mainMenu = document.getElementById('main-menu');
   if (menuButton && mainMenu) {
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // 
 
-  //画像切替
+  // 画像切替処理
   const thumbnails = document.querySelectorAll('.thumbnail');
   const mainPicture = document.getElementById('mainPicture');
   const mainImage = document.getElementById('mainImage');
