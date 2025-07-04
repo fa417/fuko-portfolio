@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.removeAttribute('data-theme');
     });
   }
+  // 
 
   //ダークモード切替
   const darkToggle = document.getElementById('dark-toggle');
@@ -50,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.setAttribute('data-theme', 'dark');
     });
   }
+  // 
 
   //SPメニュー
   const menuButton = document.getElementById('menu-button');
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mainMenu.classList.toggle('open');
     });
   }
+  // 
 
   //画像切替
   const thumbnails = document.querySelectorAll('.thumbnail');
@@ -76,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sources[1].srcset = spSrc;
     }
     if (mainImage) {
-      mainImage.src = isPC ? pcSrc : spSrc; // ←ここは isPC に直します
+      mainImage.src = isPC ? pcSrc : spSrc;
     }
   }
 
@@ -134,3 +137,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+// 
