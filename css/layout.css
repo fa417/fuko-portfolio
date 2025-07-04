@@ -114,7 +114,7 @@ footer {
   z-index: 1000;
 }
 
-.has-sub-menu.open>.works-sub-menu {
+.has-sub-menu:hover .works-sub-menu {
   display: block;
 }
 

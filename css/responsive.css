@@ -263,11 +263,9 @@
 
   .has-sub-menu.open .works-sub-menu {
     display: block;
-    /* ← これですでにopen時だけ表示 */
   }
 
   .works-sub-menu li a {
-    /* padding: 0 0 0 30px; */
     width: 100px;
   }
 
