@@ -256,10 +256,6 @@
     padding: 10px 20px;
   }
 
-  .works-sub-menu li a {
-    font-size: var(--font-size-16px);
-  }
-
   .works-sub-menu {
     border: none;
     display: block;
@@ -456,7 +452,7 @@
   }
 
   .works-sub-menu li a {
-    padding: 0 0 0 5px;
+    padding: 10px;
     font-size: var(--font-size-16px);
   }
 
