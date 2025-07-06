@@ -305,7 +305,8 @@ footer {
 
 #yoga-pc,
 #rezent-pc,
-#room-pc {
+#room-pc,
+#fuko-pc{
   width: 100%;
   height: 500px;
   position: relative;
@@ -313,13 +314,15 @@ footer {
 
 #yoga-sp,
 #rezent-sp,
-#room-sp {
+#room-sp,
+#fuko-sp {
   display: none;
 }
 
 #yoga-pc canvas,
 #rezent-pc canvas,
-#room-pc canvas {
+#room-pc canvas,
+#fuko-pc canvas{
   width: 100% !important;
   height: 100% !important;
 }
