@@ -452,8 +452,7 @@
   }
 
   .works-sub-menu li a {
-    padding: 10px;
-    font-size: var(--font-size-16px);
+    padding: 5px;
   }
 
   /* works section */
