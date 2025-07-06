@@ -451,10 +451,6 @@
     margin: 10px 0;
   }
 
-  .works-sub-menu li a {
-    padding: 5px;
-  }
-
   /* works section */
   .group-title {
     font-size: var(--font-size-18px);
