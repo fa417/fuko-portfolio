@@ -171,6 +171,7 @@ footer p:last-of-type{
   color: var(--bg);
   font-family: 'Playfair Display', serif;
   font-weight: var(--font-weight-semi-bold);
+  text-align: center;
 }
 
 .arrow {

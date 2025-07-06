@@ -170,7 +170,7 @@ footer {
 }
 
 .lp-group {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .group-title {
@@ -184,11 +184,11 @@ footer {
 }
 
 .website-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+  margin: 0 auto 60px;
   width: 80%;
 }
 
@@ -258,14 +258,17 @@ footer {
 }
 
 .page-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .page-links a {
   display: inline-block;
   padding: 10px 30px;
-  margin: auto;
+  width: 20%;
 }
 
 .portfolio-wrapper {

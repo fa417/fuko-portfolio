@@ -105,8 +105,14 @@
     width: 90%;
   }
 
+  .lp-group {
+    margin: 50px 0;
+  }
+
   .website-wrapper {
-    gap: 20px;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: 0 auto 50px;
     width: 90%;
   }
 
@@ -145,7 +151,8 @@
   }
 
   .page-links a {
-    padding: 5px 20px;
+    padding: 10px 20px;
+    width: 25%;
   }
 
   .portfolio-wrapper {
@@ -265,10 +272,6 @@
     width: 100px;
   }
 
-  .works-sub-menu li:not(:last-child) a {
-    margin-bottom: 10px;
-  }
-
   /*  */
 
   /* top-container */
@@ -302,6 +305,8 @@
   }
 
   .website-wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 0;
     width: 100%;
   }
 
@@ -333,6 +338,15 @@
 
   .page-name {
     font-size: var(--font-size-24px);
+  }
+
+  .page-links {
+    gap: 20px;
+  }
+
+  .page-links a {
+    padding: 5px 10px;
+    width: 35%;
   }
 
   .portfolio-wrapper {
@@ -457,12 +471,7 @@
   }
 
   .website-wrapper {
-    display: block;
-  }
-
-  .website-wrapper a:not(:last-child) {
-    display: block;
-    margin-bottom: 20px;
+    row-gap: 30px;
   }
 
   /*  */
@@ -483,6 +492,10 @@
   /*  */
 
   /* zen yoga & rezent & my crochet room- page - */
+  .page-links a {
+    width: 40%;
+  }
+
   .main-image {
     height: 350px;
   }
