@@ -170,7 +170,7 @@ footer p:last-of-type{
 .page-links a {
   color: var(--bg);
   font-family: 'Playfair Display', serif;
-  font-weight: var(--font-weight-semi-bold);
+  font-weight: var(--font-weight-medium);
   text-align: center;
 }
 

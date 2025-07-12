@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃばルタ</title>
+    <link rel="icon" href="../img/favicon.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <header>
+        <button id="menu-button" class="menu-button">Menu</button>
+        <nav class="main-menu" id="main-menu">
+            <ul>
+                <li><a href="../index.html#top">
+                        Top
+                    </a></li>
+                <li><a href="../index.html#profile">
+                        Profile
+                    </a></li>
+                <li class="has-sub-menu">
+                    <a href="../index.html#works" class="works-menu-toggle">Works</a>
+                    <ul class="works-sub-menu">
+                        <li><a href="zen-yoga.html">Zen Yoga</a></li>
+                        <li><a href="rezent.html" title="Back Alley 1950 - リーゼント専門理容室 -">Back Alley 1950 - リーゼント専門理容室
+                                -</a></li>
+                        <li><a href="my-crochet-room.html">My Crochet Room</a></li>
+                        <li><a href="fuko-portfolio.html">Fuko Portfolio</a></li>
+                        <li><a href="java-ruta.html">じゃばルタ</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#skills">
+                        Skills
+                    </a></li>
+                <li><a href="../index.html#contact">
+                        Contact
+                    </a></li>
+                <li><a href="#light" id="light-toggle">
+                        Light
+                    </a></li>
+                <li><a href="#dark" id="dark-toggle">
+                        Dark
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-item">
+            <div class="container">
+                <h1 class="page-name">じゃばルタ</h1>
+
+                <div class="page-links">
+                    <a href="https://java-ruta.vercel.app/" class="demo-link" role="button">View Demo Site</a>
+                    <a href="https://github.com/fa417/java-ruta" class="demo-link">GitHub</a>
+                </div>
+
+                <picture class="picture">
+                    <source srcset="../img/java-ruta/pc/main.webp" media="(min-width: 768px)">
+                    <source srcset="../img/java-ruta/sp/main.webp" media="(max-width: 767px)">
+                    <img src="../img/java-ruta/pc/main.webp" alt="じゃばルタ トップ画像">
+                </picture>
+
+                <div class="portfolio-wrapper">
+
+                    <div class="visual-block">
+
+                        <div class="gallery">
+
+                            <button class="arrow left-arrow">&#10094;</button>
+
+                            <picture id="mainPicture">
+                                <source media="(min-width: 768px)" srcset="../img/java-ruta/pc/1.webp">
+                                <source media="(max-width: 767px)" srcset="../img/java-ruta/sp/1.webp">
+                                <img id="mainImage" class="main-image" src="../img/java-ruta/pc/1.webp"
+                                    alt="Fuko Portfolio メイン画像" />
+                            </picture>
+
+                            <button class="arrow right-arrow">&#10095;</button>
+
+                            <div class="thumbnails">
+                                <img class="thumbnail selected" src="../img/java-ruta/pc/1.webp" alt="じゃばルタ 画像1"
+                                    data-pc="../img/java-ruta/pc/1.webp" data-sp="../img/java-ruta/sp/1.webp" />
+                                <img class="thumbnail" src="../img/java-ruta/pc/2.webp" alt="じゃばルタ 画像2"
+                                    data-pc="../img/java-ruta/pc/2.webp" data-sp="../img/java-ruta/sp/2.webp" />
+                                <img class="thumbnail" src="../img/java-ruta/pc/3.webp" alt="じゃばルタ 画像3"
+                                    data-pc="../img/java-ruta/pc/3.webp" data-sp="../img/java-ruta/sp/3.webp" />
+                                <img class="thumbnail" src="../img/java-ruta/pc/4.webp" alt="じゃばルタ 画像2"
+                                    data-pc="../img/java-ruta/pc/4.webp" data-sp="../img/java-ruta/sp/4.webp" />
+                                <img class="thumbnail" src="../img/java-ruta/pc/5.webp" alt="じゃばルタ 画像3"
+                                    data-pc="../img/java-ruta/pc/5.webp" data-sp="../img/java-ruta/sp/5.webp" />
+                            </div>
+                        </div>
+
+                        <div class="area-3d">
+                            <div id="fuko-pc"></div>
+                            <div id="fuko-sp"></div>
+                            <p class="hint">
+                                360° view — drag to rotate
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="website-content">
+
+                        <div class="website-inner">
+                            <h2 class="item-title">Persona</h2>
+
+                            <div class="concept-text-wrap">
+                                <p class="pc-text">
+                                    JavaScriptの基礎を楽しく復習できるように設計された学習ゲームです。主にJavaScript初学者や復習したい方を想定しています。
+                                </p>
+                                <p class="sp-text">
+                                    JavaScript初学者や復習したい方向けの学習ゲームです。</p>
+                            </div>
+                        </div>
+
+                        <div class="website-inner">
+                            <h2 class="item-title">Concept</h2>
+
+                            <div class="concept-text-wrap">
+                                <p class="pc-text">
+                                    カルタ形式のゲームでJavaScriptの用語や構文を楽しく学べる構成にしました。正解すれば札が取れる演出により、記憶に残りやすくなるよう工夫しています。和風のビジュアルとインタラクションを取り入れることで、飽きずに学べる体験を提供します。
+                                </p>
+                                <p class="sp-text">
+                                    カルタでJavaScriptを学べるようにしました。和風のデザインで、楽しく記憶に残るよう工夫しています。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="website-inner">
+                            <h2 class="item-title">Technologies Used</h2>
+
+                            <div class="concept-text-wrap">
+                                <p class="pc-text">HTML/CSS/JavaScript/Photoshop</p>
+                                <p class="sp-text">HTML/CSS/JavaScript/Photoshop</p>
+                            </div>
+                        </div>
+
+                        <div class="website-inner">
+                            <h2 class="item-title">Duration</h2>
+
+                            <div class="concept-text-wrap">
+                                <p class="pc-text">2025年7月上旬～2025年7月上旬（約4日）</p>
+                                <p class="sp-text">2025年7月上旬～2025年7月上旬（約4日）</p>
+                            </div>
+                        </div>
+
+                        <div class="website-inner">
+                            <h2 class="item-title">Features</h2>
+
+                            <div class="concept-text-wrap">
+                                <p class="pc-text">
+                                    問題はランダムに出題され、選択肢から答えを選ぶことでカルタを獲得する形式になっています。スマートフォンにも対応したレイアウトを採用し、解説付きの答え合わせ機能、結果発表、再挑戦機能など、短時間でも効果的に学習できる設計にしました。
+                                </p>
+                                <p class="sp-text">
+                                    ランダム出題・解説付きの答え合わせ・結果発表など学びやすく工夫しています。スマホ対応もしています。
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Fuko Portfolio All Rights Reserved.</p>
+        <p> <a href="https://deviceframes.com/templates/iphone-13">iPhoneモックアップ</a>
+            から作成されたデバイスモックアップ</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <!-- 3dモデル用 -->
+    <script type="module" src="../js/three/import/import-fuko-pc.js"></script>
+    <script type="module" src="../js/three/import/import-fuko-sp.js"></script>
+</body>
+
+</html>
