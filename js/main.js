@@ -2,6 +2,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.works-menu-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
+      const isSP = window.matchMedia('(max-width: 768px)').matches;
+      if (isSP) return;
+
       const menuItem = toggle.closest('.has-sub-menu');
       if (!menuItem) return;
 
@@ -36,13 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // SPメニュー
   const menuButton = document.getElementById('menu-button');
   const mainMenu = document.getElementById('main-menu');
-
   if (menuButton && mainMenu) {
     menuButton.addEventListener('click', () => {
-      const isSP = window.matchMedia('(max-width:768px)').matches;
-      if (!isSP) {
-        mainMenu.classList.toggle('open');
-      }
+      mainMenu.classList.toggle('open');
     });
   }
   // 
