@@ -112,6 +112,11 @@
   .website-wrapper {
     column-gap: 30px;
     row-gap: 40px;
+    margin: 0 auto 40px;
+    width: 90%;
+  }
+
+  .row-2 {
     margin: 0 auto 50px;
     width: 90%;
   }
@@ -322,6 +327,15 @@
     padding: 5px 0;
   }
 
+  .row-2 {
+    margin: 0 auto 50px;
+    width: 100%;
+  }
+
+  .row-2 .group-inner{
+    width: 100%;
+  }
+
   /*  */
 
   /* skills section */
@@ -479,7 +493,7 @@
     color: var(--main-text);
     display: block;
     position: absolute;
-    top: 20px;
+    top: 40px;
     right: 20px;
     background: transparent;
     border: none;
@@ -496,11 +510,16 @@
   }
 
   .lp-group {
-    margin: 30px 0;
+    margin: 40px 0;
   }
 
   .website-wrapper {
     row-gap: 30px;
+    margin: 0 auto 30px;
+  }
+
+  .row-2{
+    margin: 0 auto 40px;
   }
 
   /*  */
