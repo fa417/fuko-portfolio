@@ -260,9 +260,13 @@
     display: none;
   }
 
-  /* .works-sub-menu li a {
-    width: 100px;
-  } */
+  .works-sub-menu li {
+    display: none;
+  }
+
+  .works-sub-menu li a {
+    display: none;
+  }
 
   /*  */
 
@@ -447,13 +451,17 @@
     padding: 5px 20px;
   }
 
-  .works-sub-menu{
+  .works-sub-menu {
     display: none;
   }
 
-  /* .works-sub-menu {
-    margin: 10px 0;
-  } */
+  .works-sub-menu li {
+    display: none;
+  }
+
+  .works-sub-menu li a {
+    display: none;
+  }
 
   /* works section */
   .group-title {
