@@ -282,7 +282,12 @@
     background: transparent;
     border: none;
     font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
     cursor: pointer;
+  }
+
+  .menu-close:active {
+    color: var(--link);
   }
 
   /*  */
@@ -332,7 +337,7 @@
     width: 100%;
   }
 
-  .row-2 .group-inner{
+  .row-2 .group-inner {
     width: 100%;
   }
 
@@ -498,7 +503,12 @@
     background: transparent;
     border: none;
     font-size: var(--font-size-30px);
+    font-weight: var(--font-weight-bold);
     cursor: pointer;
+  }
+
+  .menu-close:active {
+    color: var(--link);
   }
 
   /*  */
@@ -518,7 +528,7 @@
     margin: 0 auto 30px;
   }
 
-  .row-2{
+  .row-2 {
     margin: 0 auto 40px;
   }
 
