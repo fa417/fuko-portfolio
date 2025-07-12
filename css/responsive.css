@@ -286,10 +286,6 @@
     cursor: pointer;
   }
 
-  .menu-close:active {
-    color: var(--link);
-  }
-
   /*  */
 
   /* top-container */
@@ -505,10 +501,6 @@
     font-size: var(--font-size-30px);
     font-weight: var(--font-weight-bold);
     cursor: pointer;
-  }
-
-  .menu-close:active {
-    color: var(--link);
   }
 
   /*  */
