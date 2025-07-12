@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/controls/OrbitControls.js';
 
 
-const canvasContainer = document.getElementById('room-pc');
+const canvasContainer = document.getElementById('java-pc');
 
 
 const scene = new THREE.Scene();
@@ -54,14 +54,9 @@ const lightBottom = new THREE.PointLight(0xffffff, 0.5);
 lightBottom.position.set(0, -10, 10);
 scene.add(lightBottom);
 
-// ライト　- 前 -
-const lightFront = new THREE.PointLight(0xffffff, 0.2);
-lightFront.position.set(0, 0, 10);
-scene.add(lightFront);
-
 const loader = new GLTFLoader();
 
-loader.load('/js/three/models/room-pc.glb', (gltf) => {
+loader.load('/js/three/models/java-pc.glb', (gltf) => {
     const model = gltf.scene;
     model.scale.set(5, 5, 5);
     scene.add(model);

@@ -31,7 +31,7 @@ canvasContainer.appendChild(renderer.domElement);
 scene.background = null;
 
 // ライト - 全体 -
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
 
 // ライト - 後 -
@@ -58,7 +58,7 @@ const loader = new GLTFLoader();
 
 loader.load('/js/three/models/fuko-pc.glb', (gltf) => {
     const model = gltf.scene;
-    model.scale.set(6, 6, 6);
+    model.scale.set(5, 5, 5);
     scene.add(model);
     animate();
 }, undefined, (error) => {

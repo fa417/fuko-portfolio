@@ -393,7 +393,8 @@
   #yoga-pc,
   #rezent-pc,
   #room-pc,
-  #fuko-pc {
+  #fuko-pc,
+  #java-pc {
     display: none;
   }
 
@@ -406,7 +407,8 @@
   #yoga-sp,
   #rezent-sp,
   #room-sp,
-  #fuko-sp {
+  #fuko-sp,
+  #java-sp {
     display: block;
     width: 100%;
     height: 300px;
