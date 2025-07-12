@@ -137,6 +137,10 @@ footer {
   cursor: pointer;
 }
 
+.menu-close{
+  display: none;
+}
+
 /*  */
 
 /* top-container */
