@@ -36,9 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // SPメニュー
   const menuButton = document.getElementById('menu-button');
   const mainMenu = document.getElementById('main-menu');
+
   if (menuButton && mainMenu) {
     menuButton.addEventListener('click', () => {
-      mainMenu.classList.toggle('open');
+      const isSP = window.matchMedia('(max-width:768px)').matches;
+      if (!isSP) {
+        mainMenu.classList.toggle('open');
+      }
     });
   }
   // 
