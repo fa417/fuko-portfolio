@@ -260,14 +260,6 @@
     display: none;
   }
 
-  .works-sub-menu li {
-    display: none;
-  }
-
-  .works-sub-menu li a {
-    display: none;
-  }
-
   /*  */
 
   /* top-container */
@@ -455,13 +447,7 @@
     display: none;
   }
 
-  .works-sub-menu li {
-    display: none;
-  }
-
-  .works-sub-menu li a {
-    display: none;
-  }
+  /*  */
 
   /* works section */
   .group-title {
