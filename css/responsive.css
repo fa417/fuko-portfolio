@@ -260,6 +260,14 @@
     display: none;
   }
 
+   .works-sub-menu li{
+    display: none;
+  }
+
+   .works-sub-menu li a{
+    display: none;
+  }
+
   /*  */
 
   /* top-container */
@@ -444,6 +452,14 @@
   }
 
   .works-sub-menu {
+    display: none;
+  }
+
+  .works-sub-menu li{
+    display: none;
+  }
+
+   .works-sub-menu li a{
     display: none;
   }
 
