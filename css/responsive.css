@@ -257,16 +257,12 @@
   }
 
   .works-sub-menu {
-    border: none;
-    display: block;
-    position: static;
-    margin: 20px 0;
-    text-align: left;
+    display: none;
   }
 
-  .works-sub-menu li a {
+  /* .works-sub-menu li a {
     width: 100px;
-  }
+  } */
 
   /*  */
 
@@ -451,9 +447,13 @@
     padding: 5px 20px;
   }
 
-  .works-sub-menu {
-    margin: 10px 0;
+  .works-sub-menu{
+    display: none;
   }
+
+  /* .works-sub-menu {
+    margin: 10px 0;
+  } */
 
   /* works section */
   .group-title {
