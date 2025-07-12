@@ -39,9 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // SPメニュー
   const menuButton = document.getElementById('menu-button');
   const mainMenu = document.getElementById('main-menu');
+  const closeButton = document.getElementById('close-btn');
+
   if (menuButton && mainMenu) {
     menuButton.addEventListener('click', () => {
       mainMenu.classList.toggle('open');
+      menuButton.style.display = 'none';
+    });
+  }
+
+  if(closeButton && mainMenu){
+    closeButton.addEventListener('click',()=>{
+      mainMenu.classList.remove('open');
+      menuButton.style.display = 'block';
     });
   }
   // 
