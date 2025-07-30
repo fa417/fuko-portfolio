@@ -181,13 +181,13 @@ footer {
   margin-bottom: 30px;
 }
 
-.lp-group .group-inner,
-.app-group .group-inner {
+.lp-group .group-inner{
   width: 80%;
   margin: auto;
 }
 
-.website-wrapper {
+.website-wrapper,
+.app-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
@@ -323,7 +323,8 @@ footer {
 #rezent-pc,
 #room-pc,
 #fuko-pc,
-#java-pc {
+#java-pc,
+#kuto-pc {
   width: 100%;
   height: 500px;
   position: relative;
@@ -333,7 +334,8 @@ footer {
 #rezent-sp,
 #room-sp,
 #fuko-sp,
-#java-sp {
+#java-sp,
+#kuto-sp {
   display: none;
 }
 
@@ -341,7 +343,8 @@ footer {
 #rezent-pc canvas,
 #room-pc canvas,
 #fuko-pc canvas,
-#java-pc canvas {
+#java-pc canvas,
+#kuto-pc canvas {
   width: 100% !important;
   height: 100% !important;
 }
