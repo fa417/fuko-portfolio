@@ -31,7 +31,7 @@ canvasContainer.appendChild(renderer.domElement);
 scene.background = null;
 
 // ライト - 全体 -
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 scene.add(ambientLight);
 
 // ライト - 後 -
