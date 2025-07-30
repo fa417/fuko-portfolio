@@ -49,13 +49,11 @@ footer {
 }
 
 .main-menu li a:active {
-  color: var(--bg);
-  background: var(--link);
+  color: var(--link);
 }
 
 .works-sub-menu {
   background: var(--bg);
-  /* border: 1px solid var(--sub-text); */
 }
 
 .menu-button:hover {
