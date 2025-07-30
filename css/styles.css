@@ -44,8 +44,7 @@ footer {
 }
 
 .main-menu li a:hover {
-  color: var(--bg);
-  background: var(--link);
+  color: var(--link);
 }
 
 .main-menu li a:active {
