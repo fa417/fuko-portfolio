@@ -502,6 +502,14 @@
 
   /*  */
 
+  /* profile section */
+  
+  .profile-img{
+    display: none;
+  }
+
+  /*  */
+
   /* works section */
   .group-title {
     font-size: var(--font-size-18px);
